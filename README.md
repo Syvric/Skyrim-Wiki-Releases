@@ -27,6 +27,6 @@ package checksum before installing.
 
 Every release package contains these files as well.
 
-Gendro is not affiliated with or endorsed by Bethesda Game Studios,
+Gendro is not affiliated with and is not endorsed by Bethesda Game Studios,
 Bethesda Softworks or ZeniMax. The Elder Scrolls and Skyrim are trademarks
 of their respective owners.
