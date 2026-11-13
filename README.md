@@ -1,6 +1,6 @@
-# Gendro releases
+# Kendro releases
 
-This repository holds only the release packages of Gendro (formerly Skyrim Wiki), a fan-made
+This repository holds only the release packages of Kendro (formerly Skyrim Wiki), a fan-made
 Windows reference app for The Elder Scrolls V: Skyrim Special Edition with
 Dawnguard, Hearthfire and Dragonborn. It contains no source code.
 
@@ -27,6 +27,6 @@ package checksum before installing.
 
 Every release package contains these files as well.
 
-Gendro is not affiliated with and is not endorsed by Bethesda Game Studios,
+Kendro is not affiliated with and is not endorsed by Bethesda Game Studios,
 Bethesda Softworks or ZeniMax. The Elder Scrolls and Skyrim are trademarks
 of their respective owners.
