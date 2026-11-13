@@ -1,0 +1,257 @@
+Third-party notices
+====================
+
+The application source code is under the Apache License 2.0. See LICENSE.
+The entries below are third-party packages and fonts only.
+
+Package licenses below are taken from the NuGet package metadata for the
+PackageReference entries in the project files. They were not guessed.
+
+The published application is a self-contained build. That build also
+contains the .NET runtime used to publish it. The runtime is not a
+PackageReference. The .NET runtime (https://github.com/dotnet/runtime)
+is used under the MIT License, Copyright (c) .NET Foundation and
+Contributors; the full MIT License text is at the end of this file.
+
+Application packages
+--------------------
+
+These packages are referenced by `Skyrim Wiki/Skyrim Wiki.csproj`.
+
+### CommunityToolkit.Mvvm 8.4.2
+
+- License expression in the nuspec: MIT
+- License URL: https://licenses.nuget.org/MIT
+- Copyright: (c) .NET Foundation and Contributors. All rights reserved.
+- Project: https://github.com/CommunityToolkit/dotnet
+- The package file `License.md` is the MIT License.
+- The net8.0 and net8.0-windows10.0.17763 dependency groups in the
+  nuspec are empty. The net10.0-windows application uses that asset, so
+  this package adds no further NuGet dependencies.
+- The package also contains `ThirdPartyNotices.txt`. Its opening list
+  names DeferredEvents, UwpNotificationNetCoreTest, MVVM Light,
+  PrivateObject/PrivateType, UniversalMarkdown, DesktopBridgeHelpers,
+  and ComputeSharp. The notices read there for DeferredEvents,
+  UwpNotificationNetCoreTest, and MVVM Light are the MIT License. This
+  application uses the MVVM library. It does not ship the Windows
+  controls named later in that file.
+
+### Microsoft.Extensions.Hosting 10.0.11
+
+- License expression in the nuspec: MIT
+- License URL: https://licenses.nuget.org/MIT
+- Copyright: © Microsoft Corporation. All rights reserved.
+- Project: https://dot.net/
+- The package ships `THIRD-PARTY-NOTICES.TXT`. The start of that file
+  records separate notices for ASP.NET (Apache License 2.0),
+  Slicing-by-8 (BSD), and Unicode data, among others. Those are .NET
+  runtime notices bundled with the package. They are not a different
+  license for Microsoft.Extensions.Hosting itself.
+
+The net10.0 dependency group declared by Microsoft.Extensions.Hosting
+10.0.11 is listed below. Each of those nuspec files uses the license
+expression MIT, the license URL https://licenses.nuget.org/MIT, and the
+copyright line "© Microsoft Corporation. All rights reserved." Deeper
+dependencies of that group are not listed here.
+
+- Microsoft.Extensions.Configuration.Abstractions 10.0.11
+- Microsoft.Extensions.Configuration.Binder 10.0.11
+- Microsoft.Extensions.Configuration.CommandLine 10.0.11
+- Microsoft.Extensions.Configuration.EnvironmentVariables 10.0.11
+- Microsoft.Extensions.Configuration.FileExtensions 10.0.11
+- Microsoft.Extensions.Configuration.Json 10.0.11
+- Microsoft.Extensions.Configuration.UserSecrets 10.0.11
+- Microsoft.Extensions.Configuration 10.0.11
+- Microsoft.Extensions.DependencyInjection.Abstractions 10.0.11
+- Microsoft.Extensions.DependencyInjection 10.0.11
+- Microsoft.Extensions.Diagnostics 10.0.11
+- Microsoft.Extensions.FileProviders.Abstractions 10.0.11
+- Microsoft.Extensions.FileProviders.Physical 10.0.11
+- Microsoft.Extensions.Hosting.Abstractions 10.0.11
+- Microsoft.Extensions.Logging.Abstractions 10.0.11
+- Microsoft.Extensions.Logging.Configuration 10.0.11
+- Microsoft.Extensions.Logging.Console 10.0.11
+- Microsoft.Extensions.Logging.Debug 10.0.11
+- Microsoft.Extensions.Logging.EventLog 10.0.11
+- Microsoft.Extensions.Logging.EventSource 10.0.11
+- Microsoft.Extensions.Logging 10.0.11
+- Microsoft.Extensions.Options 10.0.11
+
+### Velopack 1.2.161
+
+- License expression in the nuspec: MIT
+- License URL: https://licenses.nuget.org/MIT
+- Copyright: Copyright © Velopack Ltd. All rights reserved.
+- Project: https://github.com/velopack/velopack
+- The net10.0 dependency group in the nuspec is empty, so this package
+  adds no further NuGet dependencies to the application.
+- Used for the update check. It stays switched off until a public HTTPS
+  update location exists. The application reads updates through its own
+  HTTPS source and does not use Velopack's hosted services.
+
+Test-only packages
+------------------
+
+These packages are referenced by `Skyrim Wiki.Tests/Skyrim Wiki.Tests.csproj`.
+They are not part of the published application. Dependencies of these
+test packages are not listed individually, except for the xUnit
+metapackage note below.
+
+### Microsoft.NET.Test.Sdk 17.8.0
+
+- Nuspec license: file `LICENSE_MIT.txt` (the MIT License)
+- Copyright: © Microsoft Corporation. All rights reserved.
+- Project: https://github.com/microsoft/vstest
+- The nuspec `licenseUrl` is the retired NuGet placeholder
+  https://aka.ms/deprecateLicenseUrl. The license text that ships in
+  the package is `LICENSE_MIT.txt`.
+
+### xunit 2.5.3
+
+- License expression in the nuspec: Apache-2.0
+- License: https://www.apache.org/licenses/LICENSE-2.0
+- Copyright: Copyright (C) .NET Foundation
+- This package is a metapackage. Its dependencies xunit.core 2.5.3,
+  xunit.assert 2.5.3, and xunit.analyzers 1.4.0 also declare the license
+  expression Apache-2.0.
+
+### xunit.runner.visualstudio 2.5.3
+
+- License expression in the nuspec: Apache-2.0
+- License: https://www.apache.org/licenses/LICENSE-2.0
+- Copyright: Copyright (C) .NET Foundation
+
+Fonts
+-----
+
+These fonts are embedded in the application (`Skyrim Wiki/Fonts/`,
+compiled into `Skyrim Wiki.exe` as WPF resources).
+
+### Inter 4.1
+
+- License: SIL Open Font License, Version 1.1 (OFL-1.1)
+- Copyright: Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
+- Source: https://github.com/rsms/inter/releases/tag/v4.1 (static TTF cuts
+  Inter-Regular, Inter-Medium, Inter-SemiBold and Inter-Bold from `Inter-4.1.zip`)
+- The fonts are used unmodified. The copyright notice and license file are
+  kept beside them as `Skyrim Wiki/Fonts/OFL-Inter.txt`; the full license
+  text is at the end of this file.
+
+MIT packages
+------------
+
+Each package marked MIT above, and the bundled .NET runtime, is used
+under the MIT License. The copyright line listed for each one is the
+notice that accompanies it. The full MIT License text follows.
+
+MIT License
+-----------
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+SIL Open Font License 1.1 (Inter)
+---------------------------------
+
+Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter)
+
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION AND CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.

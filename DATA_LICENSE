@@ -1,0 +1,57 @@
+# Catalog data
+
+This note explains how the catalog files may be used. It records
+attribution. It is not legal advice.
+
+The files are:
+
+- `Skyrim Wiki/Data/wiki_database.json` — German source catalog
+- `Skyrim Wiki/Data/wiki_database.en.json` — English overlay
+
+Where the English overlay has no text for a field, the application
+shows the German source.
+
+## Editorial text
+
+Descriptions, summaries, and classification notes in these files were
+written for this project. They were not copied from UESP articles or
+from in-game books. That editorial text, in both languages, is licensed
+under the Apache License 2.0, the same license as the application source
+(see LICENSE and NOTICE). Copyright 2026 Syvric. Modified versions must
+carry the notice required by NOTICE.
+
+## Game facts
+
+Names, statistics, FormIDs, locations, quest structure, and similar
+facts describe The Elder Scrolls V: Skyrim Special Edition, including
+Dawnguard, Hearthfire, and Dragonborn. They are recorded here so the
+reference can be used offline. They are not owned by this project.
+
+Nothing in this file, or in the Apache License 2.0, grants rights in Bethesda
+Game Studios, Bethesda Softworks, or ZeniMax material. The Elder Scrolls
+and Skyrim are trademarks of their respective owners.
+
+## UESP research
+
+Facts were checked against The Unofficial Elder Scrolls Pages (UESP):
+
+https://en.uesp.net/
+
+UESP content is licensed under Creative Commons Attribution-ShareAlike
+2.5 (CC BY-SA 2.5):
+
+- https://creativecommons.org/licenses/by-sa/2.5/
+- https://en.uesp.net/wiki/UESPWiki:Copyright_and_Ownership
+
+Page titles and facts were used as evidence. UESP article prose was not
+copied into these files. If you share the catalog, keep this UESP credit
+with it. If you copy UESP article text yourself, CC BY-SA 2.5 applies to
+that copy. This repository does not give you that text.
+
+## What you can do
+
+You may use, copy, and share the editorial text under the Apache License 2.0.
+You may use the recorded game facts as reference data, without any
+license to the game itself. Keep the UESP credit when you share the
+catalog. Do not present the catalog as an official Bethesda, Bethesda
+Softworks, or ZeniMax product, or as a copy of UESP.
