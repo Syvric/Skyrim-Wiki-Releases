@@ -1,12 +1,20 @@
-# Skyrim Wiki releases
+# Kendro releases
 
-This repository holds only the release packages of Skyrim Wiki, a fan-made
+This repository holds only the release packages of Kendro (formerly Skyrim Wiki), a fan-made
 Windows reference app for The Elder Scrolls V: Skyrim Special Edition with
 Dawnguard, Hearthfire and Dragonborn. It contains no source code.
 
 The app's built-in update check reads the release feed from this
 repository over HTTPS. It sends no usage data and installs an update only
 after you confirm it. Favorites and notes stay in `%LocalAppData%\SkyrimWiki`.
+
+## Windows SmartScreen warning
+
+The app is not code-signed. On first start Windows may show
+"Windows protected your PC". Only run it if you downloaded the package
+from this repository's Releases page. Then choose "More info" and
+"Run anyway". Later updates through the built-in update check verify the
+package checksum before installing.
 
 ## Licenses
 
@@ -19,6 +27,6 @@ after you confirm it. Favorites and notes stay in `%LocalAppData%\SkyrimWiki`.
 
 Every release package contains these files as well.
 
-Skyrim Wiki is not affiliated with or endorsed by Bethesda Game Studios,
+Kendro is not affiliated with and is not endorsed by Bethesda Game Studios,
 Bethesda Softworks or ZeniMax. The Elder Scrolls and Skyrim are trademarks
 of their respective owners.
